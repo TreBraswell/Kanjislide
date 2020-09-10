@@ -235,6 +235,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blocksPerLine: 4
   blank: {fileID: 4334488096856371353, guid: 455a459320e1a20468dcd85d248739ee, type: 3}
+  player: {fileID: 7337087903638087595, guid: a4d29d46ba2bb894ba76c5925f16f83b, type: 3}
+  block: {fileID: 4717883305713667463, guid: 191026f71cf5bd8459ee73d7b67cbd46, type: 3}
+  spriteindex: 0
 --- !u!4 &856617997
 Transform:
   m_ObjectHideFlags: 0

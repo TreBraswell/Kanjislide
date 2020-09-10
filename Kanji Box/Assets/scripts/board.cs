@@ -33,7 +33,18 @@ public class board : MonoBehaviour {
                 {
                     GameObject playercopy = Instantiate(player);
                     playercopy.transform.position=  blockObject.transform.position;
+                    spriteindex++;
                     
+                }
+                else if (spriteindex+1<=sprites.Length)
+                {
+                    GameObject playercopy = Instantiate(block);
+                    playercopy.transform.position=  blockObject.transform.position;
+                    spriteindex++;
+                }
+                else
+                {
+                    spriteindex = 1;
                 }
             }
         }
