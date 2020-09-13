@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9081694187488436317}
   - component: {fileID: 3041540896910554899}
   - component: {fileID: 1107028179966527956}
+  - component: {fileID: 2897086700853501906}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -106,7 +107,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371414892eb63ee4aaf7ce16a9af5782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 7337087903638087595}
+  blank: {fileID: 4334488096856371353, guid: 455a459320e1a20468dcd85d248739ee, type: 3}
+--- !u!54 &2897086700853501906
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773647911907818343}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &7337087903638087595
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +135,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8106926443577610956}
   - component: {fileID: 7153451912124642026}
-  - component: {fileID: 1392495158068724313}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -190,16 +207,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1392495158068724313
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7337087903638087595}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

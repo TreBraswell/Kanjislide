@@ -33,6 +33,10 @@ public class board : MonoBehaviour {
                 {
                     GameObject playercopy = Instantiate(player);
                     playercopy.transform.position=  blockObject.transform.position;
+                    playercopy.GetComponent<SpriteRenderer>().sprite = (Sprite)(sprites[spriteindex]);
+                    var bounds = playercopy.GetComponent<SpriteRenderer>().bounds;
+                    var factor = blank.GetComponent<SpriteRenderer>().bounds.size.y / bounds.size.y;
+                    transform.localScale =new Vector3(factor, factor, factor);
                     spriteindex++;
                     
                 }
@@ -40,11 +44,21 @@ public class board : MonoBehaviour {
                 {
                     GameObject playercopy = Instantiate(block);
                     playercopy.transform.position=  blockObject.transform.position;
+                    playercopy.GetComponent<SpriteRenderer>().sprite = (Sprite)(sprites[spriteindex]);
+                    var bounds = playercopy.GetComponent<SpriteRenderer>().bounds;
+                    var factor = blank.GetComponent<SpriteRenderer>().bounds.size.y / bounds.size.y;
+                    transform.localScale =new Vector3(factor, factor, factor);
                     spriteindex++;
                 }
                 else
                 {
                     spriteindex = 1;
+                    GameObject playercopy = Instantiate(block);
+                    playercopy.transform.position=  blockObject.transform.position;
+                    playercopy.GetComponent<SpriteRenderer>().sprite = (Sprite)(sprites[spriteindex]);
+                    var bounds = playercopy.GetComponent<SpriteRenderer>().bounds;
+                    var factor = blank.GetComponent<SpriteRenderer>().bounds.size.y / bounds.size.y;
+                    transform.localScale =new Vector3(factor, factor, factor);
                 }
             }
         }

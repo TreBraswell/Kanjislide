@@ -338,5 +338,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8260929767546829817, guid: 191026f71cf5bd8459ee73d7b67cbd46, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 191026f71cf5bd8459ee73d7b67cbd46, type: 3}
