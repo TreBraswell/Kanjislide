@@ -23,24 +23,24 @@ public class Movement : MonoBehaviour
     {
 
 
-        if (Input.GetKey ("w")) {
+        if (Input.GetKeyDown ("w")) {
             Vector3 ppos = player.transform.position;
             ppos.y = player.transform.position.y + player.GetComponent<SpriteRenderer>().bounds.size.y;
             transform.position = ppos;
          }
-         if (Input.GetKey ("s")) {
+         if (Input.GetKeyDown ("s")) {
              //pos.y -= speed * Time.deltaTime;
             Vector3 ppos = player.transform.position;
             ppos.y = player.transform.position.y - player.GetComponent<SpriteRenderer>().bounds.size.y;
             transform.position = ppos;
          }
-         if (Input.GetKey ("d")) {
+         if (Input.GetKeyDown ("d")) {
              //pos.x += speed * Time.deltaTime;
             Vector3 ppos = player.transform.position;
             ppos.x = player.transform.position.x + player.GetComponent<SpriteRenderer>().bounds.size.x;
             transform.position = ppos;
          }
-         if (Input.GetKey ("a")) {
+         if (Input.GetKeyDown ("a")) {
              //pos.x -= speed * Time.deltaTime;
             Vector3 ppos = player.transform.position;
             ppos.x = player.transform.position.x - player.GetComponent<SpriteRenderer>().bounds.size.x;
@@ -71,6 +71,7 @@ public class Movement : MonoBehaviour
             transform.parent.transform.localScale =new Vector3(factor, factor, factor);    
 
             transform.parent.transform.position = copyofcol;
+            transform.position = new Vector3(1000,100,0);
             //transform.position = copyofcol;
             Debug.Log("correct collision");
         } 
