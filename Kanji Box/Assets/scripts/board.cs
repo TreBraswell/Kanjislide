@@ -23,9 +23,10 @@ public class board : MonoBehaviour {
     }
     void Update(){
         if (Input.GetKeyDown ("r")) {
-            ClearBoard();
-            CreatePuzzle();
-            CreateBoard();
+            Debug.Log("reset");
+            //ClearBoard();
+            //CreatePuzzle();
+            //CreateBoard();
         }
     }
     void ClearBoard(){
